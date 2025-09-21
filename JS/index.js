@@ -197,7 +197,7 @@ function attack(){
     health -= monsters[fighting].level;
     currHealth -= weapons[currentWeapon].power + Math.floor(Math.random()*xp)+1;
     healthText.innerText = health;
-    monsterHealthText.innerText = currHealth;
+    monsterHealthText.textContent = currHealth;
     if (health <=0){
         lose();
     }
